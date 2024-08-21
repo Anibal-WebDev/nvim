@@ -12,10 +12,8 @@ return {
 					enable = true,
 					update_cwd = true,
 				},
-				view = {
-					width = 30,
-					side = "left",
-					auto_resize = true,
+				window = {
+					position = "right"
 				},
 			})
 		end,

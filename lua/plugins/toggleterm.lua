@@ -5,12 +5,12 @@ return {
 			require("toggleterm").setup({
 				size = 20,
 				open_mapping = [[<A-t>]],
-				direction = "float",
+				direction = "tab",
 				float_opts = {
-					border = "curved",
+					border = "",
 					width = 100,
 					height = 20,
-					winblend = 3,
+					winblend = 0,
 					highlights = {
 						border = "Normal",
 						background = "Normal",
