@@ -9,5 +9,9 @@ vim.o.hlsearch = false
 vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.o.showcmd = false
+vim.o.wrap = true
+vim.o.columns = 100
+
+vim.g.mapleader = " "
 
 vim.opt.termguicolors = true

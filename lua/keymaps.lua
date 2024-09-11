@@ -11,6 +11,18 @@ map("n", "<A-w>", ":wq<CR>")
 map("n", "<A-%>", ":source %<CR>")
 map("n", "<C-C>", ":e ~/.config/nvim/init.lua<CR>")
 
+-- Surround keymaps
+--[[
+map("n", "<C-q>", "i\"<ESC>ea\"<ESC>")
+map("n", "<C-w>", "i'<ESC>ea'<ESC>")
+map("n", "<C-e>", "i(<ESC>ea)<ESC>")
+map("n", "<C-r>", "i[<ESC>ea]<ESC>")
+map("n", "<C-t>", "i{<ESC>ea}<ESC>")
+map("n", "<C-y>", "i<<ESC>ea><ESC>")
+map("n", "<C-u>", "i{% <ESC>ea %}<ESC>")
+map("n", "<C-i>", "i{{ <ESC>ea }}<ESC>")
+]]
+
 -- Move window keymaps
 
 map("n", "<C-h>", "<C-w>H")

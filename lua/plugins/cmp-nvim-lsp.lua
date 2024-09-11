@@ -43,8 +43,41 @@ return {
 				capabilities = capabilities,
 			}
 
-			require('lspconfig').tsserver.setup {
+			require('lspconfig').ts_ls.setup {
 				capabilities = capabilities,
+			}
+
+			require('lspconfig').html.setup {
+				capabilities = capabilities,
+				config = {
+					cmd = { "vscode-html-language-server", "--stdio" },
+					filetypes = { "html", "htmldjango" },
+					root_dir = function(fname)
+						return root_pattern(fname) or vim.loop.os_homedir()
+					end,
+				},
+				settings = {
+					html = {
+						validate = true
+					}
+				},
+				html = {
+					sources = {
+						html5 = true,
+					},
+					stylesheets = {
+						validate = true
+					},
+					templates = {
+						django = true,
+					},
+				},
+			}
+
+			require 'lspconfig'.tailwindcss.setup {
+				cmd = { "tailwindcss-language-server", "--stdio" },
+				filetypes = { "htmldjango", "html", "html5", "django-html" },
+				settings = {}
 			}
 
 			require('lspconfig').cssls.setup {
