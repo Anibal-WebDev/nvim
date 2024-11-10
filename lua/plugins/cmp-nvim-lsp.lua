@@ -10,6 +10,19 @@ return {
 
 			local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+			require('lspconfig').gopls.setup({
+				capabilities = capabilities,
+				settings = {
+					gopls = {
+						analyses = {
+							unusedparams = true,
+						},
+						staticcheck = true,
+						gofumpt = true,
+					},
+				},
+			})
+
 			require('lspconfig').clangd.setup {
 				capabilities = capabilities,
 				config = {

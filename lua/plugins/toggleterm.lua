@@ -3,13 +3,12 @@ return {
 		'akinsho/toggleterm.nvim',
 		config = function()
 			require("toggleterm").setup({
-				size = 20,
+				size = 12,
 				open_mapping = [[<A-t>]],
-				direction = "tab",
+				direction = "float",
 				float_opts = {
-					border = "",
-					width = 100,
-					height = 20,
+					border = "curved",
+					width = 75,
 					winblend = 0,
 					highlights = {
 						border = "Normal",

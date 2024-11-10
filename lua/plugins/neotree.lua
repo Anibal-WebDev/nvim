@@ -13,7 +13,8 @@ return {
 					update_cwd = true,
 				},
 				window = {
-					position = "right"
+					position = "right",
+					width = 25
 				},
 			})
 		end,
