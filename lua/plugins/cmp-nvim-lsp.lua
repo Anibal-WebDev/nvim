@@ -64,7 +64,7 @@ return {
 				capabilities = capabilities,
 				config = {
 					cmd = { "vscode-html-language-server", "--stdio" },
-					filetypes = { "html", "htmldjango" },
+					filetypes = { "htmldjango", "html", "html5", "django-html" },
 					root_dir = function(fname)
 						return root_pattern(fname) or vim.loop.os_homedir()
 					end,
