@@ -1,6 +1,6 @@
 return {
-	{'AndreM222/copilot-lualine'},
-	{'nvim-tree/nvim-web-devicons'},
+	{ 'AndreM222/copilot-lualine' },
+	{ 'nvim-tree/nvim-web-devicons' },
 	{
 		'nvim-lualine/lualine.nvim',
 		config = function()
@@ -8,8 +8,8 @@ return {
 				options = {
 					icons_enabled = true,
 					theme = 'dracula',
-					section_separators = { left = '', right = '' },
-					component_separators = { left = '', right = '' },
+					section_separators = { left = '', right = '' },
+					component_separators = { left = '', right = '' },
 					disabled_filetypes = {
 						statusline = {},
 						winbar = {},
@@ -29,7 +29,7 @@ return {
 					lualine_c = { 'selectioncount' },
 					lualine_x = { 'copilot', 'encoding', 'fileformat', 'filetype' },
 					lualine_y = { 'progress' },
-					lualine_z = { 'location', 'datetime' },
+					lualine_z = { 'location' },
 				},
 				inactive_sections = {
 					lualine_a = {},
@@ -45,7 +45,7 @@ return {
 					lualine_c = {},
 					lualine_x = {},
 					lualine_y = {},
-					lualine_z = { 'tabs' }
+					lualine_z = { 'datetime' }
 				},
 				winbar = {},
 				inactive_winbar = {},
