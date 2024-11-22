@@ -22,4 +22,4 @@ require("lazy").setup({ import = "plugins" }, {
 	},
 })
 
-vim.cmd("colorscheme zaibatsu")
+vim.cmd("colorscheme dracula")
